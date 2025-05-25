@@ -1,21 +1,6 @@
-
 # Missing Data and Imputation
 
 A Jupyter Notebook project exploring methods for detecting, analyzing, and imputing missing data in tabular datasets. This notebook is designed as a **class exercise** to demonstrate practical techniques in Python using `pandas`, with clear examples and visualizations.
-
----
-
-## 📚 Table of Contents
-
-- [Project Overview](#project-overview)
-- [Dataset](#dataset)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Results](#results)
-- [Contributing](#contributing)
-- [Acknowledgments](#acknowledgments)
-- [License](#license)
 
 ---
 
