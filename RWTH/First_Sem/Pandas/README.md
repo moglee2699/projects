@@ -12,6 +12,8 @@ This notebook introduces key pandas functionalities with practical examples usin
 - Engineer features for modeling
 - Calculate basic statistics and correlations
 
+> 🧑‍🏫 This notebook can also be used as a **class exercise** or self-study guide.
+
 ---
 
 ## 📊 Dataset: `auto-mpg.csv`
@@ -40,4 +42,3 @@ Install the dependencies using:
 
 ```bash
 pip install pandas matplotlib
-
