@@ -1,0 +1,34 @@
+import nltk
+import json
+import pickle
+from nltk.stem import WordNetLemmatizer
+
+# Initialize lemmatizer
+nltk.download('punkt')
+nltk.download('wordnet')
+lemmatizer = WordNetLemmatizer()
+
+# Load intents JSON
+with open('data/intents.json') as file:
+    intents = json.load(file)
+
+words = []
+documents = []
+ignore_words = ['?', '!', '.', ',']
+
+# Extract patterns and tags
+for intent in intents['intents']:
+    for pattern in intent['patterns']:
+        tokens = nltk.word_tokenize(pattern)
+        words.extend(tokens)
+        documents.append((tokens, intent['tag']))
+
+# Lemmatize and clean words
+words = [lemmatizer.lemmatize(w.lower()) for w in words if w not in ignore_words]
+words = sorted(list(set(words)))
+
+# Save the words list to words.pkl
+with open('models/words.pkl', 'wb') as f:
+    pickle.dump(words, f)
+
+print("words.pkl has been created and saved.")
