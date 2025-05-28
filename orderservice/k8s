@@ -1,0 +1,47 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orderservice-deployment
+  labels:
+    app: orderservice
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: orderservice
+  template:
+    metadata:
+      labels:
+        app: orderservice
+    spec:
+      containers:
+      - name: orderservice
+        image: your-dockerhub-username/orderservice:latest
+        ports:
+        - containerPort: 8080
+        readinessProbe:
+          httpGet:
+            path: /actuator/health
+            port: 8080
+          initialDelaySeconds: 10
+          periodSeconds: 5
+        livenessProbe:
+          httpGet:
+            path: /actuator/health
+            port: 8080
+          initialDelaySeconds: 30
+          periodSeconds: 10
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: orderservice-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: orderservice
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
