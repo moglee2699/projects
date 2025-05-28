@@ -44,8 +44,6 @@ pip install -r requirements.txt
 python -m nltk.downloader punkt wordnet
 ````
 
----
-
 ## 🗂️ Project Structure
 
 automated-therapy/
@@ -66,8 +64,6 @@ automated-therapy/
 │   └── sounds/
 └── tests/
 
-
----
 
 ## ⚙️ Configuration
 
