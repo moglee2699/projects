@@ -1,0 +1,27 @@
+import json
+import pickle
+from pathlib import Path
+
+# Load intents data
+intents_path = Path('data/intents.json')
+with open(intents_path) as file:
+    intents = json.load(file)
+
+# Extract unique intent tags
+classes = []
+for intent in intents['intents']:
+    if intent['tag'] not in classes:
+        classes.append(intent['tag'])
+
+# Sort alphabetically
+classes = sorted(classes)
+
+# Save to classes.pkl
+models_dir = Path('models')
+models_dir.mkdir(exist_ok=True)  # Create directory if needed
+
+with open(models_dir / 'classes.pkl', 'wb') as f:
+    pickle.dump(classes, f)
+
+print(f"Generated {len(classes)} intent classes:")
+print('\n'.join(classes))
