@@ -48,7 +48,6 @@ python -m nltk.downloader punkt wordnet
 
 ## 🗂️ Project Structure
 
-```
 automated-therapy/
 ├── therapy_app/
 │   ├── music_player.py
@@ -66,7 +65,7 @@ automated-therapy/
 │   ├── images/
 │   └── sounds/
 └── tests/
-```
+
 
 ---
 
