@@ -1,0 +1,23 @@
+replicaCount: 2
+
+image:
+  repository: your-dockerhub-username/orderservice
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: LoadBalancer
+  port: 80
+  targetPort: 8080
+
+readinessProbe:
+  path: /actuator/health
+  port: 8080
+  initialDelaySeconds: 10
+  periodSeconds: 5
+
+livenessProbe:
+  path: /actuator/health
+  port: 8080
+  initialDelaySeconds: 30
+  periodSeconds: 10
