@@ -1,0 +1,54 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hello", "Hey", "Good morning", "Good evening"],
+      "responses": ["Hello! How are you feeling today?", "Hi there! How can I assist you?", "Hey! What's on your mind?"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye", "Catch you later"],
+      "responses": ["Take care! Remember, I'm here whenever you need to talk.", "Goodbye! Stay positive!", "See you soon!"]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "I appreciate it", "Thanks a lot"],
+      "responses": ["You're welcome!", "Happy to help!", "Anytime!"]
+    },
+    {
+      "tag": "stress",
+      "patterns": ["I'm feeling stressed", "I'm overwhelmed", "I'm anxious", "I feel anxious", "I'm under pressure"],
+      "responses": ["I'm sorry you're feeling stressed. Would you like some relaxation tips?", "Stress can be tough. Would you like to talk about what's bothering you?", "Take a deep breath. Would you like some calming music or sounds?"]
+    },
+    {
+      "tag": "sadness",
+      "patterns": ["I'm feeling sad", "I'm depressed", "I feel down", "I'm unhappy"],
+      "responses": ["I'm here for you. Would you like to share what's making you feel this way?", "It's okay to feel sad sometimes. Would talking help?", "Would you like some uplifting music or activities?"]
+    },
+    {
+      "tag": "happiness",
+      "patterns": ["I'm feeling happy", "I'm glad", "I'm excited", "I'm joyful"],
+      "responses": ["That's wonderful! Keep enjoying your day!", "Happy to hear that! Would you like to share more?", "Great! Would you like to do something fun or relaxing?"]
+    },
+    {
+      "tag": "help",
+      "patterns": ["I need help", "Can you help me?", "I want to talk to someone", "I need support"],
+      "responses": ["I'm here for you. Would you like some advice or just to talk?", "You're not alone. How can I assist you today?", "Tell me what's bothering you, and I'll do my best to help."]
+    },
+    {
+      "tag": "meditation",
+      "patterns": ["Can you guide me through meditation?", "I want to meditate", "Help me relax"],
+      "responses": ["Sure! Find a comfortable position, close your eyes, and take deep breaths. Would you like me to play some relaxing sounds?", "Let's do a quick meditation. Breathe in slowly... breathe out... Would you like some calming music?"]
+    },
+    {
+      "tag": "music",
+      "patterns": ["Play some relaxing music", "I want to listen to music", "Can you play music for stress relief?"],
+      "responses": ["Absolutely! Playing relaxing music now.", "Here's some calming music for you.", "Enjoy this soothing tune."]
+    },
+    {
+      "tag": "bye",
+      "patterns": ["Bye", "Goodbye", "See you later", "Take care"],
+      "responses": ["Goodbye! Remember, I'm here whenever you need me.", "Take care! Stay positive.", "See you soon!"]
+    }
+  ]
+}
