@@ -59,4 +59,4 @@ Please ensure all work is:
 
 ## 📄 License
 
-This project is for educational use only as part of the RWTH Aachen University coursework on Management and Technology.
+This project is for educational use only as part of the RWTH Aachen University coursework on Management and Technology Perspective.
