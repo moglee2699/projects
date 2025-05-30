@@ -44,7 +44,7 @@ This repository hosts a variety of projects from my academic coursework, interns
 **Data Tools**: Pandas, NumPy, Scikit-learn, Power BI  
 **ML & AI**: Scikit-learn, TensorFlow (basics)  
 **Other Tools**: Git, Docker, Jupyter Notebook  
-**Databases**: MySQL, PostgreSQL  
+**Databases**: MySQL, PostgreSQL, MongoDB  
 
 ---
 
