@@ -9,8 +9,6 @@ You can view all my certificates using the link below:
 
 👉 https://drive.google.com/drive/u/0/folders/1N-4CcrUNGyZhnTApij9qDIIr8uFNhKIu
 
-> **Note:** Make sure the link has viewing access enabled for recruiters or collaborators.
-
 ## 🧠 About Me
 
 I am currently pursuing my Master's in Data Analytics and Decision Science.  
