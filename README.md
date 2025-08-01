@@ -10,11 +10,6 @@
 
 Hi, I’m Abishai! I’m passionate about using **data and technology** to solve real-world problems. I’m currently pursuing my Master's in **Data Analytics & Decision Science** at RWTH Aachen University. I enjoy blending technical skills with decision-making insights to drive smarter solutions.
 
-Beyond academics, I’m deeply interested in:
-- 📽️ Cinema & storytelling  
-- 📊 Finance & investments  
-- 🎧 Music & personal development  
-
 ---
 
 ## 🚀 Projects Overview
